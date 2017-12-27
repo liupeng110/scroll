@@ -89,9 +89,7 @@ public class ListFragment extends BaseFragment {
     @Override public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         Logger.i( "setUserVisibleHint: mTitle=" + mTitle + "  " + " isVisibleToUser=" +  isVisibleToUser);
-        if (
-
-                ) {//表示界面可见
+        if (isVisibleToUser) {//表示界面可见
             if (mNoHorizontalScrollView != null) {// 之所以判断是否为空，
                 Log.i(TAG, "setUserVisibleHint: mTitle=" + mTitle + "  " + " isVisibleToUser=" +
                         isVisibleToUser + "mScrollY=" + mScrollY);
